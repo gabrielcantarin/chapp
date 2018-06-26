@@ -130,8 +130,8 @@ export default class App extends React.Component {
           <AdMobBanner
             style={styles.bottomBanner}
             bannerSize="smartBannerPortrait"
-            adUnitID="ca-app-pub-3940256099942544/6300978111"
-            // adUnitID="ca-app-pub-7397930156564286~5104108949"
+            // adUnitID="ca-app-pub-3940256099942544/6300978111"
+            adUnitID="ca-app-pub-7397930156564286~5104108949"
             // Test ID, Replace with your-admob-unit-id
             testDeviceID="EMULATOR"
             didFailToReceiveAdWithError={this.bannerError}
