@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import { Alert, StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput } from 'react-native';
+import { Alert, StyleSheet, Text, View, ScrollView, TouchableOpacity, TextInput, StatusBar } from 'react-native';
+import { AdMobBanner, AdMobInterstitial, AdMobRewarded } from "expo";
+
 import {createDrawerNavigator} from 'react-navigation';
 
 // import HomeScreen from  './components/HomeScreen';
@@ -123,8 +125,17 @@ export default class App extends React.Component {
     return (
       // <MyApp/>
       <View style={styles.container}>
+        <StatusBar barStyle="light-content" hidden={false}/>
         <View style={styles.ads}>
-          <Text>Ads</Text>
+          <AdMobBanner
+            style={styles.bottomBanner}
+            bannerSize="smartBannerPortrait"
+            adUnitID="ca-app-pub-3940256099942544/6300978111"
+            // adUnitID="ca-app-pub-7397930156564286~5104108949"
+            // Test ID, Replace with your-admob-unit-id
+            testDeviceID="EMULATOR"
+            didFailToReceiveAdWithError={this.bannerError}
+          />
         </View>
         <View style={styles.viewInput}>
           <Text style={styles.inputMain}>{this.state.display}</Text>
@@ -198,6 +209,7 @@ export default class App extends React.Component {
             </TouchableOpacity>
           </View>
         </View>
+        
       </View>
     );
   }
@@ -223,11 +235,13 @@ const styles = StyleSheet.create({
     margin: 0,
   },
   ads: {
+    flex:1,
     flexDirection: 'row',
-    justifyContent: 'flex-end',
-    backgroundColor: 'white',
-    height: '15%',
-    alignItems:  'flex-end',
+    justifyContent: 'flex-start',
+    // backgroundColor: 'white',
+    height: '20%',
+    alignItems:  'center',
+    // backgroundColor: 'black',
   },
   viewInput: {
     flexDirection: 'row',
@@ -240,7 +254,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'space-between',
     backgroundColor: 'blue',
-    height: '65%',
+    height: '60%',
     alignItems:  'center',
   },
   inputMain: {
