@@ -1,15 +1,15 @@
 {
   "expo": {
    "name": "ChApp Calculator",
-   "icon": "./img/logo.jpg",
+   "icon": "./img/logo.png",
    "version": "1.0.0",
-   "slug": "ChApp Calculator",
+   "slug": "ChAppCalculator",
    "sdkVersion": "27.0.0",
    "ios": {
-     "bundleIdentifier": "com.chapp.gabriel"
+     "bundleIdentifier": "co.charityapp.ios"
    },
    "android": {
-     "package": "com.chapp.gabriel"
+     "package": "co.charityapp.ios"
    }
   }
 }
