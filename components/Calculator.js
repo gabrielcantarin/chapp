@@ -118,7 +118,7 @@ class Calculator extends Component {
             <View style={styles.container}>
                 <StatusBar barStyle="light-content" hidden={false} />
                 <View style={styles.ads}>
-                    <TouchableOpacity style={{ height: 35, width: 35, backgroundColor: 'white', marginLeft: 16 }}
+                    {/* <TouchableOpacity style={{ height: 35, width: 35, backgroundColor: 'white', marginLeft: 16 }}
                         onPress={() => {
                             if (this.props.onDrawerActivator) {
                                 this.props.onDrawerActivator()
@@ -126,12 +126,13 @@ class Calculator extends Component {
                         }}
                     >
                         <View></View>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
                     <AdMobBanner
                         style={styles.bottomBanner}
                         bannerSize="smartBannerPortrait"
                         // adUnitID="ca-app-pub-3940256099942544/6300978111"
-                        adUnitID="ca-app-pub-7397930156564286~5104108949"
+                        adUnitID="ca-app-pub-7397930156564286/6195646990"
+                        // adUnitID="ca-app-pub-7397930156564286/8534891957"
                         // Test ID, Replace with your-admob-unit-id
                         testDeviceID="EMULATOR"
                         didFailToReceiveAdWithError={this.bannerError}

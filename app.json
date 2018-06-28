@@ -2,7 +2,7 @@
   "expo": {
    "name": "ChApp Calculator",
    "icon": "./img/logo.png",
-   "version": "1.0.0",
+   "version": "2.0.0",
    "slug": "ChAppCalculator",
    "sdkVersion": "27.0.0",
    "ios": {
