@@ -1,15 +1,17 @@
 {
   "expo": {
-   "name": "ChApp Calculator",
-   "icon": "./img/logo.png",
-   "version": "2.0.0",
-   "slug": "ChAppCalculator",
-   "sdkVersion": "27.0.0",
-   "ios": {
-     "bundleIdentifier": "co.charityapp.ios"
-   },
-   "android": {
-     "package": "co.charityapp.ios"
-   }
+    "name": "ChApp Calculator",
+    "icon": "./img/logo.png",
+    "version": "2.0.0",
+    "slug": "ChAppCalculator",
+    "orientation":"portrait",
+    "sdkVersion": "27.0.0",
+    "ios": {
+      "bundleIdentifier": "co.charityapp.ios"
+    },
+    "android": {
+      "package": "co.charityapp.ios",
+      "versionCode": 2
+    }
   }
 }
