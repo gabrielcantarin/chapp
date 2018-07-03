@@ -14,7 +14,7 @@ class HomeScreen extends Component {
     title: "Home",
     headerLeft:
       <TouchableOpacity>
-        <Icon ios='ios-menu' android="md-menu" style={{ paddingLeft: 10, backgroundColor: 'red', }} onPress={() => alert()} />
+        <Icon ios='ios-menu' android="md-menu" style={{ paddingLeft: 10, paddingTop: 50, backgroundColor: 'red', }} onPress={() => alert()} />
       </TouchableOpacity>
     ,
     drawerLabel: 'Notification',
