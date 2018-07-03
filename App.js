@@ -4,6 +4,7 @@ import { createDrawerNavigator } from 'react-navigation';
 import HomeScreen from './components/HomeScreen';
 import DrawerHeader from './components/DrawerHeader';
 import SettingsScreen from './components/SettingsScreen';
+import LoginPage from './components/auth/LoginPage';
 
 const MyApp = createDrawerNavigator({
   Home: {
@@ -11,8 +12,12 @@ const MyApp = createDrawerNavigator({
   },
   Settings: {
     screen: SettingsScreen
+  },
+  Login: {
+    screen: LoginPage
   }
 }, {
+  initialRouteName:'Login',
     contentComponent: props =>
       <DrawerHeader {...props} />
   })

@@ -7,7 +7,7 @@ import {
 } from "react-native";
 
 import { Container, Content, Icon, Button } from 'native-base'
-import CustomHeader from './CustomHeader';
+//import CustomHeader from './CustomHeader';
 
 
 class SettingsScreen extends Component {
@@ -27,10 +27,10 @@ class SettingsScreen extends Component {
 
             <Container>
 
-                <CustomHeader
+               {/*  <CustomHeader
                     title="Settings"
                     drawerOpen={() => this.props.navigation.navigate("DrawerOpen")}
-                />
+                /> */}
                 <Content contentContainerStyle={{ flex: 1, alignItems: 'center', justifyContent: 'center', padding: 10 }}>
                     <Button
                         full
