@@ -20,14 +20,14 @@ class Button extends Component {
                     }
                 }}
             >
-                <View style={[styles.labelContainer, { backgroundColor: this.props.filled ? 'orange' : 'white' }]}>
-                    <Text style={{ color: this.props.labelColor || 'orange', fontSize: 16 }}>{this.props.label}</Text>
+                <View style={[styles.labelContainer, { backgroundColor: this.props.filled ? '#BA2C6B' : 'white' }]}>
+                    <Text style={{ color: this.props.labelColor || 'black', fontSize: 16 }}>{this.props.label}</Text>
                 </View>
             </TouchableOpacity>
         );
     }
 }
 const styles = StyleSheet.create({
-    labelContainer: { padding: 8, width: '85%', paddingHorizontal: 22, backgroundColor: 'white', borderRadius: 2, borderWidth: 2, borderColor: 'orange', alignItems: 'center', justifyContent: 'center' }
+    labelContainer: { padding: 8, width: '85%', paddingHorizontal: 22, backgroundColor: 'white', borderRadius: 2, borderWidth: 2, borderColor: '#BA2C6B', alignItems: 'center', justifyContent: 'center' }
 })
 export default Button;

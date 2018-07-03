@@ -25,8 +25,8 @@ class LoginPage extends Component {
 
           <Animatable.View animation='zoomIn' useNativeDrive={true}>
             <Image
-              style={{ height: 130, width: 130 }}
-              source={require('./../../img/logo.png')}
+              style={{ height: 130, width: 140 }}
+              source={require('./../../img/logo2.png')}
             />
 
           </Animatable.View>
@@ -35,11 +35,11 @@ class LoginPage extends Component {
         <View style={styles.buttons}>
           <View style={styles.buttonsWrapper}>
             <Button label={'Log in'} style={{ width: '95%', marginBottom: 4 }} tap={() => { }} />
-            <Button filled label={'Create an account'} labelColor={'white'} style={{ width: '95%', marginBottom: 8, }} tap={() => { }} />
+            <Button filled label={'Create an account'} labelColor={'white'} style={{ width: '95%', marginBottom: 40, }} tap={() => { }} />
           </View>
           <Animatable.View animation={'slideInUp'} useNativeDriver={true}>
              <TouchableOpacity>
-            <Text style={{ opacity: 0.7 }}>Skipp it</Text>
+            <Text style={{ opacity: 0.7, marginBottom: 100  }}>Skipp it</Text>
           </TouchableOpacity>
           </Animatable.View>
          
