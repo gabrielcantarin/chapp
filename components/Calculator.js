@@ -282,17 +282,16 @@ const styles = StyleSheet.create({
         height: 70,
         alignItems: 'center',
         justifyContent: 'center',
-        //flex: 1,
-        backgroundColor: '#8f8e93',
-        //borderWidth: 1,
-        //borderColor: '#666',
+        backgroundColor: 'black',
+        borderWidth: 3,
+        borderColor: '#BA2C6B',
 
     },
     buttonSimbles: {
         //flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#ff9500',
+        backgroundColor: '#BA2C6B',
         borderRadius: 50,
         width: 70,
         height: 70,
@@ -310,7 +309,7 @@ const styles = StyleSheet.create({
         //flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#e6e5eb',
+        backgroundColor: '#BA2C6B',
         borderRadius: 50,
         width: 70,
         height: 70,
@@ -322,7 +321,7 @@ const styles = StyleSheet.create({
         fontSize: 30,
     },
     keySimble: {
-        color: '#fff',
+        color: 'white',
         fontSize: 40,
     },
     keyZero: {
@@ -340,6 +339,7 @@ const styles = StyleSheet.create({
     },
     keySpecial: {
         fontSize: 30,
+        color: 'white',
     },
 
 })

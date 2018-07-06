@@ -17,7 +17,7 @@ const MyApp = createDrawerNavigator({
     screen: LoginPage
   }
 }, {
-  initialRouteName:'HomeScreen',
+  initialRouteName:'Home',
     contentComponent: props =>
       <DrawerHeader {...props} />
   })
